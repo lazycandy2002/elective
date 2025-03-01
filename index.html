@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable Example</title>
+</head>
+<body>
+    <script>
+        var name = "Jared";
+        var age = 18;
+        var hobbies = ["playing", "travelling", "swimming", "coding"];
+        var message = "I'm " + name + ", " + age + " years old and I like " + hobbies[0] + " , "+ hobbies[1] + " , "+ hobbies[2] + " and "+ hobbies[3] + ".";
+        
+        let person = {
+            name: name,
+            age: age,
+            hobbies: hobbies,
+            education: {
+                elementary: "Basiawan Central Elementary School",
+                highschool: "Digos City National High School",
+                college: "Cor Jesu College",
+            },
+        };
+
+        var message2 = `I'm ${person.name}, ${person.age} years old and I like ${person.hobbies[0]}, ${person.hobbies[1]}, ${person.hobbies[2]} and ${person.hobbies[3]}.
+        I completed my elementary at ${person.education.elementary}, highschool at ${person.education.highschool} and college at ${person.education.college}.`;
+
+        // console.log("Message1: " + message);
+        // console.log("Message2: " + message2);
+
+        // FUNCTIONS
+        function logWord(word, age) {
+            console.log('logWord', word);
+            console.log('logWord', age);
+        }
+
+        function logperson(name, age) {
+            console.log('logperson', name);
+            console.log('logperson', age);
+        }
+
+        // LOOP
+        // i=0; i<5; i++
+
+        // Activity 1
+        function sum(num1, num2) {
+            var sum = num1 + num2;
+            console.log('Sum:', sum);
+        }
+
+        sum(5, 10);
+
+        // Activity 2
+        var hobbies1 = ["playing", "travelling", "swimming", "coding", "cycling"];
+
+        for (var i = 0; i < hobbies1.length; i++) {
+            console.log('I Like ' + hobbies1[i]);
+        }
+
+
+        
+
+  // arithmetic
+  // oprators  (<, >, =, ==, ===, <=, >=, !, !=)
+  // conditional
+  // function
+  // loop
+
+
+  // var, let, const
+  let str1 = "Hello 'world'"
+  let str2 = 'Hello "world"'
+  var num2 = 2
+  const num3 = 3
+  const isReadOnly = true //false
+  let str = `Hello ${num2} ${num3} ${num2 + num3}`
+
+
+  let student = {
+    name: 'John Doe',
+    age: 30,
+    address: {
+      street: '123 Main St',
+      city: 'New York'
+    },
+    phone: {
+      number: '123-456-7890'
+    },
+    isOld: false
+  }
+  let student2 = {
+    name: 'Neil Doe',
+    age: 30,
+    address: {
+      street: '123 Main St',
+      city: 'New York'
+    },
+    phone: {
+      number: '123-456-7890'
+    },
+    isOld: false
+  }
+
+
+  let numbers = [1, 2, 3, 4, 5]
+  // ['index0', 'index1', 'index2', 'index3', 'index4', 'index5']
+  console.log(numbers[2])
+  let sampleArray = ['Neil', 12, { phone: '1234' }]
+  console.log(sampleArray[2])
+  let students = [student, student2]
+
+
+
+
+  // console.log(student?.phone?.number || "no number")
+  // console.log(sampleArray[0])
+  // console.log(sampleArray[1])
+  // console.log(students[1].address.street)
+  // console.log(student.address.street)
+
+
+  // variable types: string, integer, boolean, object, array
+
+
+  // console.log('hello world')
+  // console.log(str)
+  // console.log(str1)
+  // console.log(str2)
+
+
+
+
+  // ARITHMETIC
+  let number1 = 1 + 2
+  let number2 = 3 - 4
+  let number3 = 2 * 3
+  let number4 = 4 / 4
+  let number5 = '1' + 2 + 3
+  let number6 = '1' / 4
+  let string1 = 'hello world' + 'sample word'
+
+
+  // console.log(number1)
+  // console.log(number2)
+  // console.log(number3)
+  // console.log(number4)
+  // console.log(number5)
+  // console.log(number6)
+  // console.log(string1)
+
+
+  // OPERATORS
+  let a = 1
+  let b = 2
+  let c = 1
+  let d = '1'
+  // console.log('value1', a < b);
+  // console.log('value2', a > b);
+  // console.log('value2.1', a >= c);
+  // console.log('value3', c == d);
+  // console.log('value4', c === d);
+  // console.log('value5', a != d)
+
+
+  // CONDITIONAL
+  let isAdult = false
+  let jared = { age: 17 }
+  let shyra = { age: 18 }
+  let leah = { age: 20 }
+  if (shyra.age > 18) {
+    isAdult = true
+    console.log(`person is an adult`)
+  } else if (shyra.age >= 18) {
+    isAdult = false
+    console.log(`person is okay`)
+  } else if (shyra.age >= 18) {
+    isAdult = false
+    console.log(`person is okay`)
+  } else if (shyra.age >= 18) {
+    isAdult = false
+    console.log(`person is okay`)
+  } else {
+    isAdult = false
+    console.log('person is not an adult')
+  }
+
+
+  // FUNCTION
+  function logWord(word, age) {
+    console.log('logWord', word)
+    console.log('logWord', age)
+  }
+
+
+  function logPerson({ name, age }) {
+    console.log('logPerson', name)
+    console.log('logPerson', age)
+  }
+
+
+  logWord('Neil', 15)
+  logPerson({ name: 'Neil', age: 15 })
+
+
+  // LOOP
+  // for (let i = 1; i <= 7; i++) {
+  //   const element = [i]
+  //   document.getElementById('week-1').innerHTML += `<div class="cell"> ${i} </div>`
+  // }
+  let numberArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  console.log(numberArray.length);
+ 
+  // console.log(numberArray[0]);
+  // console.log(numberArray[1]);
+  // console.log(numberArray[2]);
+  // console.log(numberArray[3]);
+  // console.log(numberArray[4]);
+  // console.log(numberArray[5]);
+  // console.log(numberArray[6]);
+  // console.log(numberArray[7]);
+  // console.log(numberArray[8]);
+  // console.log(numberArray[9]);
+ 
+  //  loop
+  // i = 0, 0 < 10, i = 1
+  // i = 1, 1 < 10, i = 2
+  // i = 2, 2 < 10, i = 3
+
+
+  for (let i = 0; i < numberArray.length; i++) {
+    console.log(numberArray[i]);
+  }
+
+
+
+
+    </script>
+</body>
+</html>
+
